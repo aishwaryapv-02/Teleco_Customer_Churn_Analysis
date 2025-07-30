@@ -1,6 +1,6 @@
-# 📊 Telco Customer Churn Analysis
+# 📊 Teleco Customer Churn Analysis
 
-This project explores patterns of customer churn in a telecommunications company using Python. The goal was to understand why customers leave and how the company might reduce churn by identifying key behavioral trends.
+This project explores patterns of customer churn in a telecommunications company using Python. TThe goal was to understand why customers leave the service and identify key patterns that contribute to churn, so the business can take steps to improve customer retention.
 
 ## 🧠 Objective
 
