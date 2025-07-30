@@ -1,27 +1,47 @@
 # 📊 Telco Customer Churn Analysis
 
-This project explores a telecom customer dataset to identify patterns in customer churn and uncover key business insights through data visualization and statistical analysis.
+This project explores patterns of customer churn in a telecommunications company using Python. The goal was to understand why customers leave and how the company might reduce churn by identifying key behavioral trends.
 
-## 🔍 Project Overview
+## 🧠 Objective
 
-- Dataset: Telco Customer Churn (public Kaggle dataset)
-- Goal: Understand the drivers of customer churn and provide actionable business insights.
-- Tools Used: Python, Pandas, Seaborn, Jupyter Notebook
+The dataset comes from Kaggle and contains information about customers, their subscriptions, and whether they churned or not. I focused on exploring the data visually and statistically to uncover insights that could help improve customer retention.
 
-## 📈 Key Findings
+## 🧪 Tools & Libraries Used
 
-- ~26.5% churn rate — significant for a subscription business
-- Month-to-month customers have the highest churn risk
-- Some high-paying, long-tenured customers have churned — missed revenue opportunity
-- Contracts and additional services strongly influence churn
+- Python (Pandas, Seaborn, Matplotlib)
+- Jupyter Notebook
 
-## ✅ Business Recommendations
+## 🔍 Key Steps Taken
 
-- Offer loyalty benefits to high-paying or long-tenured users
-- Encourage long-term contracts for month-to-month customers
-- Bundle services (tech support, streaming) to improve retention
+- Cleaned the dataset (handled null values, converted data types)
+- Explored target imbalance in the `Churn` column
+- Visualized churn patterns by customer tenure, contract type, charges, and services used
+- Investigated outliers in `TotalCharges` and tried identifying high-value customers who churned
+- Interpreted churn drivers using basic statistics and plots
 
-## 📁 Files
+## 📈 Notable Insights
 
-- `Telco_Customer_Churn_Analysis.ipynb` – Jupyter Notebook with EDA
-- `Telco_Customer_Churn_Analysis.html` – Static viewable version
+- The overall churn rate is around 26.5%, which is quite high.
+- Most churned customers were on **month-to-month contracts**.
+- Customers with **tech support and streaming services** seemed less likely to churn.
+- A few **long-tenured or high-paying customers** also churned, which may represent missed retention opportunities.
+- No statistical outliers in `TotalCharges` by IQR method, but manual thresholds helped analyze customer segments.
+
+## 💡 Business Suggestions
+
+- Provide incentives to customers on month-to-month plans to switch to longer contracts.
+- Improve service bundling (tech support, streaming) as these appear linked to higher retention.
+- Focus retention efforts on high-paying customers even if they’ve been around a long time.
+
+## 🗂️ Files Included
+
+- `Telco_Customer_Churn_Analysis.ipynb`: My full notebook with code, comments, and plots
+- `Telco_Customer_Churn_Analysis.html`: Static version of the notebook (for easier viewing)
+
+## ✅ What's Next
+
+I'd like to eventually build a simple predictive model using logistic regression or decision trees, and maybe try visualizing this analysis in a dashboard tool like Power BI or Tableau.
+
+---
+
+Let me know if you'd like to update the business insights or recommendations as I continue learning.
